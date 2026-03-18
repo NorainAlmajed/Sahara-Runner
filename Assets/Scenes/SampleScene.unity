@@ -319,6 +319,7 @@ GameObject:
   - component: {fileID: 11759922}
   - component: {fileID: 11759921}
   - component: {fileID: 11759920}
+  - component: {fileID: 11759923}
   m_Layer: 0
   m_Name: Tree01
   m_TagString: Untagged
@@ -357,7 +358,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -416,6 +417,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 11759918}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &11759923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11759918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9070b4f42455f447b98ab4a1b277085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thePlayer: {fileID: 753903226}
+  playerAnim: {fileID: 91822795}
 --- !u!1 &34629439
 GameObject:
   m_ObjectHideFlags: 0
@@ -1208,7 +1223,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalScale.y
@@ -1220,15 +1235,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.04
+      value: -0.02000001
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.37
+      value: 0.17199993
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.10000038
+      value: 1.4099979
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1760,6 +1775,7 @@ GameObject:
   - component: {fileID: 234965798}
   - component: {fileID: 234965797}
   - component: {fileID: 234965796}
+  - component: {fileID: 234965799}
   m_Layer: 0
   m_Name: Crate01
   m_TagString: Untagged
@@ -1797,7 +1813,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1856,6 +1872,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 234965794}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &234965799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234965794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9070b4f42455f447b98ab4a1b277085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thePlayer: {fileID: 753903226}
+  playerAnim: {fileID: 91822795}
 --- !u!1001 &236636743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2087,7 +2117,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3c577c8d173740c41bbc09c07438365b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.7
+      value: -0.659
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3c577c8d173740c41bbc09c07438365b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2152,6 +2182,7 @@ GameObject:
   - component: {fileID: 285241060}
   - component: {fileID: 285241059}
   - component: {fileID: 285241058}
+  - component: {fileID: 285241061}
   m_Layer: 0
   m_Name: Tree01 (1)
   m_TagString: Untagged
@@ -2190,7 +2221,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2249,6 +2280,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 285241056}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &285241061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285241056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9070b4f42455f447b98ab4a1b277085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thePlayer: {fileID: 753903226}
+  playerAnim: {fileID: 91822795}
 --- !u!1001 &293840941
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2464,6 +2509,7 @@ GameObject:
   - component: {fileID: 363310320}
   - component: {fileID: 363310319}
   - component: {fileID: 363310318}
+  - component: {fileID: 363310321}
   m_Layer: 0
   m_Name: Tree01 (1)
   m_TagString: Untagged
@@ -2502,7 +2548,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2561,6 +2607,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 363310316}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &363310321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363310316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9070b4f42455f447b98ab4a1b277085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thePlayer: {fileID: 753903226}
+  playerAnim: {fileID: 91822795}
 --- !u!1001 &387681142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2949,6 +3009,7 @@ GameObject:
   - component: {fileID: 445916662}
   - component: {fileID: 445916661}
   - component: {fileID: 445916660}
+  - component: {fileID: 445916663}
   m_Layer: 0
   m_Name: Rock01 (4)
   m_TagString: Untagged
@@ -2965,7 +3026,7 @@ Transform:
   m_GameObject: {fileID: 445916658}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.47, y: 0.95, z: 28}
+  m_LocalPosition: {x: 4.47, y: 1.24, z: 27.55}
   m_LocalScale: {x: 2, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2987,7 +3048,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -3046,6 +3107,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 445916658}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &445916663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445916658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9070b4f42455f447b98ab4a1b277085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thePlayer: {fileID: 753903226}
+  playerAnim: {fileID: 91822795}
 --- !u!1001 &458590961
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3872,15 +3947,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.04
+      value: -0.13999987
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.15999997
+      value: -0.29999995
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.10000038
+      value: 0.2400012
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4179,15 +4254,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.04
+      value: -0.03999996
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.15999997
+      value: -0.5799999
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.10000038
+      value: -0.09999657
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4984,6 +5059,7 @@ GameObject:
   - component: {fileID: 774348835}
   - component: {fileID: 774348834}
   - component: {fileID: 774348833}
+  - component: {fileID: 774348836}
   m_Layer: 0
   m_Name: Tree01 (3)
   m_TagString: Untagged
@@ -5022,7 +5098,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -5081,6 +5157,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774348831}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &774348836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774348831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9070b4f42455f447b98ab4a1b277085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thePlayer: {fileID: 753903226}
+  playerAnim: {fileID: 91822795}
 --- !u!1001 &777822557
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5429,15 +5519,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.04
+      value: -0.03999996
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.15999997
+      value: -0.32000017
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.10000038
+      value: 0.3500023
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5710,6 +5800,7 @@ GameObject:
   - component: {fileID: 942355530}
   - component: {fileID: 942355529}
   - component: {fileID: 942355528}
+  - component: {fileID: 942355531}
   m_Layer: 0
   m_Name: Rock01
   m_TagString: Untagged
@@ -5726,7 +5817,7 @@ Transform:
   m_GameObject: {fileID: 942355526}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.47, y: 0.95, z: 6.26}
+  m_LocalPosition: {x: 4.47, y: 1.48, z: 6.26}
   m_LocalScale: {x: 2, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5748,7 +5839,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -5807,6 +5898,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 942355526}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &942355531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942355526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9070b4f42455f447b98ab4a1b277085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thePlayer: {fileID: 753903226}
+  playerAnim: {fileID: 91822795}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -5925,15 +6030,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.04
+      value: -0.08500004
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.37
+      value: 0.3800001
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.10000038
+      value: 1.390007
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6123,6 +6228,7 @@ GameObject:
   - component: {fileID: 987464123}
   - component: {fileID: 987464122}
   - component: {fileID: 987464121}
+  - component: {fileID: 987464124}
   m_Layer: 0
   m_Name: Tree01 (2)
   m_TagString: Untagged
@@ -6161,7 +6267,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -6220,6 +6326,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 987464119}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &987464124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987464119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9070b4f42455f447b98ab4a1b277085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thePlayer: {fileID: 753903226}
+  playerAnim: {fileID: 91822795}
 --- !u!4 &989318368 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4777469181809006, guid: 2bd413b982191d54396bb381188bb4d0, type: 3}
@@ -6684,6 +6804,7 @@ GameObject:
   - component: {fileID: 1127059714}
   - component: {fileID: 1127059713}
   - component: {fileID: 1127059712}
+  - component: {fileID: 1127059715}
   m_Layer: 0
   m_Name: Tree01
   m_TagString: Untagged
@@ -6722,7 +6843,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -6781,6 +6902,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127059710}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1127059715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127059710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9070b4f42455f447b98ab4a1b277085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thePlayer: {fileID: 753903226}
+  playerAnim: {fileID: 91822795}
 --- !u!1001 &1132344290
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7458,6 +7593,7 @@ GameObject:
   - component: {fileID: 1255973357}
   - component: {fileID: 1255973356}
   - component: {fileID: 1255973355}
+  - component: {fileID: 1255973358}
   m_Layer: 0
   m_Name: Rock01 (1)
   m_TagString: Untagged
@@ -7474,7 +7610,7 @@ Transform:
   m_GameObject: {fileID: 1255973353}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 0.95, z: 5.2}
+  m_LocalPosition: {x: 0.3, y: 1.09, z: 5.01}
   m_LocalScale: {x: 2, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7496,7 +7632,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -7555,6 +7691,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1255973353}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1255973358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255973353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9070b4f42455f447b98ab4a1b277085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thePlayer: {fileID: 753903226}
+  playerAnim: {fileID: 91822795}
 --- !u!1001 &1270420893
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7691,6 +7841,7 @@ GameObject:
   - component: {fileID: 1355071012}
   - component: {fileID: 1355071011}
   - component: {fileID: 1355071010}
+  - component: {fileID: 1355071013}
   m_Layer: 0
   m_Name: Rock01 (2)
   m_TagString: Untagged
@@ -7707,7 +7858,7 @@ Transform:
   m_GameObject: {fileID: 1355071008}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.9, y: 0.95, z: -17.8}
+  m_LocalPosition: {x: -1.81, y: 1.04, z: -19.29}
   m_LocalScale: {x: 2, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7729,7 +7880,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -7788,6 +7939,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1355071008}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1355071013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355071008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9070b4f42455f447b98ab4a1b277085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thePlayer: {fileID: 753903226}
+  playerAnim: {fileID: 91822795}
 --- !u!4 &1366510127 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4777469181809006, guid: 2bd413b982191d54396bb381188bb4d0, type: 3}
@@ -8338,6 +8503,7 @@ GameObject:
   - component: {fileID: 1419290437}
   - component: {fileID: 1419290436}
   - component: {fileID: 1419290435}
+  - component: {fileID: 1419290438}
   m_Layer: 0
   m_Name: Rock01 (1)
   m_TagString: Untagged
@@ -8354,7 +8520,7 @@ Transform:
   m_GameObject: {fileID: 1419290433}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 0.95, z: 5.2}
+  m_LocalPosition: {x: -5.45, y: 1.03, z: 4.78}
   m_LocalScale: {x: 2, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8376,7 +8542,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -8435,6 +8601,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1419290433}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1419290438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419290433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9070b4f42455f447b98ab4a1b277085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thePlayer: {fileID: 753903226}
+  playerAnim: {fileID: 91822795}
 --- !u!1001 &1470414947
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8465,11 +8645,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.15999997
+      value: -0.44000006
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.10000038
+      value: 0.089998245
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8553,15 +8733,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.04
+      value: -0.03999996
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.15999997
+      value: -0.46000004
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.10000038
+      value: -0.09999657
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8590,6 +8770,10 @@ PrefabInstance:
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23672204903577092, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8622,15 +8806,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.04
+      value: -0.039999723
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.15999997
+      value: -0.44000006
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.10000038
+      value: 0.19000006
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9082,6 +9266,7 @@ GameObject:
   - component: {fileID: 1641802878}
   - component: {fileID: 1641802877}
   - component: {fileID: 1641802876}
+  - component: {fileID: 1641802879}
   m_Layer: 0
   m_Name: Crate01
   m_TagString: Untagged
@@ -9119,7 +9304,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -9178,6 +9363,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1641802874}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1641802879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641802874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9070b4f42455f447b98ab4a1b277085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thePlayer: {fileID: 753903226}
+  playerAnim: {fileID: 91822795}
 --- !u!1 &1646232943
 GameObject:
   m_ObjectHideFlags: 0
@@ -9190,6 +9389,7 @@ GameObject:
   - component: {fileID: 1646232947}
   - component: {fileID: 1646232946}
   - component: {fileID: 1646232945}
+  - component: {fileID: 1646232948}
   m_Layer: 0
   m_Name: Crate01
   m_TagString: Untagged
@@ -9227,7 +9427,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -9286,6 +9486,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646232943}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1646232948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646232943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9070b4f42455f447b98ab4a1b277085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thePlayer: {fileID: 753903226}
+  playerAnim: {fileID: 91822795}
 --- !u!1 &1655106487
 GameObject:
   m_ObjectHideFlags: 0
@@ -9298,6 +9512,7 @@ GameObject:
   - component: {fileID: 1655106491}
   - component: {fileID: 1655106490}
   - component: {fileID: 1655106489}
+  - component: {fileID: 1655106492}
   m_Layer: 0
   m_Name: Rock01 (3)
   m_TagString: Untagged
@@ -9314,7 +9529,7 @@ Transform:
   m_GameObject: {fileID: 1655106487}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.2, y: 0.95, z: 5.2}
+  m_LocalPosition: {x: -8, y: 1.02, z: 4.64}
   m_LocalScale: {x: 2, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9336,7 +9551,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -9395,6 +9610,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1655106487}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1655106492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655106487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9070b4f42455f447b98ab4a1b277085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thePlayer: {fileID: 753903226}
+  playerAnim: {fileID: 91822795}
 --- !u!1001 &1667274552
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9583,6 +9812,7 @@ GameObject:
   - component: {fileID: 1690364394}
   - component: {fileID: 1690364393}
   - component: {fileID: 1690364392}
+  - component: {fileID: 1690364395}
   m_Layer: 0
   m_Name: Tree01 (2)
   m_TagString: Untagged
@@ -9621,7 +9851,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -9680,6 +9910,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1690364390}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1690364395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690364390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9070b4f42455f447b98ab4a1b277085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thePlayer: {fileID: 753903226}
+  playerAnim: {fileID: 91822795}
 --- !u!1 &1700475903
 GameObject:
   m_ObjectHideFlags: 0
@@ -9923,15 +10167,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.86
+      value: 0.015000105
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.15999997
+      value: -0.31999993
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.10000038
+      value: 0.3200059
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9988,6 +10232,7 @@ GameObject:
   - component: {fileID: 1740300854}
   - component: {fileID: 1740300853}
   - component: {fileID: 1740300852}
+  - component: {fileID: 1740300856}
   m_Layer: 0
   m_Name: Tree01
   m_TagString: Untagged
@@ -10010,7 +10255,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -10085,6 +10330,20 @@ Transform:
   - {fileID: 752915818}
   m_Father: {fileID: 880545257}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1740300856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740300851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9070b4f42455f447b98ab4a1b277085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thePlayer: {fileID: 753903226}
+  playerAnim: {fileID: 91822795}
 --- !u!1 &1756473786
 GameObject:
   m_ObjectHideFlags: 0
@@ -10097,6 +10356,7 @@ GameObject:
   - component: {fileID: 1756473790}
   - component: {fileID: 1756473789}
   - component: {fileID: 1756473788}
+  - component: {fileID: 1756473791}
   m_Layer: 0
   m_Name: Tree01
   m_TagString: Untagged
@@ -10135,7 +10395,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -10194,6 +10454,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1756473786}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1756473791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756473786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9070b4f42455f447b98ab4a1b277085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thePlayer: {fileID: 753903226}
+  playerAnim: {fileID: 91822795}
 --- !u!1 &1761665695
 GameObject:
   m_ObjectHideFlags: 0
@@ -10206,6 +10480,7 @@ GameObject:
   - component: {fileID: 1761665698}
   - component: {fileID: 1761665697}
   - component: {fileID: 1761665696}
+  - component: {fileID: 1761665700}
   m_Layer: 0
   m_Name: Rock01
   m_TagString: Untagged
@@ -10228,7 +10503,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -10296,13 +10571,27 @@ Transform:
   m_GameObject: {fileID: 1761665695}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.47, y: 0.95, z: 6.26}
+  m_LocalPosition: {x: 3.84, y: 1.15, z: 6.26}
   m_LocalScale: {x: 2, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 220140727}
   m_Father: {fileID: 880545257}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1761665700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761665695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9070b4f42455f447b98ab4a1b277085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thePlayer: {fileID: 753903226}
+  playerAnim: {fileID: 91822795}
 --- !u!1 &1790444262
 GameObject:
   m_ObjectHideFlags: 0
@@ -10743,6 +11032,7 @@ GameObject:
   - component: {fileID: 1869952193}
   - component: {fileID: 1869952192}
   - component: {fileID: 1869952191}
+  - component: {fileID: 1869952194}
   m_Layer: 0
   m_Name: Rock01
   m_TagString: Untagged
@@ -10759,7 +11049,7 @@ Transform:
   m_GameObject: {fileID: 1869952189}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.47, y: 0.95, z: 6.26}
+  m_LocalPosition: {x: 4.47, y: 1.22, z: 5.97}
   m_LocalScale: {x: 2, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10781,7 +11071,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -10840,6 +11130,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1869952189}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1869952194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869952189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9070b4f42455f447b98ab4a1b277085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thePlayer: {fileID: 753903226}
+  playerAnim: {fileID: 91822795}
 --- !u!1 &1875346678
 GameObject:
   m_ObjectHideFlags: 0
@@ -11052,6 +11356,7 @@ GameObject:
   - component: {fileID: 1884362374}
   - component: {fileID: 1884362373}
   - component: {fileID: 1884362372}
+  - component: {fileID: 1884362375}
   m_Layer: 0
   m_Name: Rock01
   m_TagString: Untagged
@@ -11068,7 +11373,7 @@ Transform:
   m_GameObject: {fileID: 1884362370}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.47, y: 0.95, z: 6.26}
+  m_LocalPosition: {x: 4.47, y: 1.49, z: 6.26}
   m_LocalScale: {x: 2, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11090,7 +11395,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -11149,6 +11454,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1884362370}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1884362375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884362370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9070b4f42455f447b98ab4a1b277085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thePlayer: {fileID: 753903226}
+  playerAnim: {fileID: 91822795}
 --- !u!1 &1902014890
 GameObject:
   m_ObjectHideFlags: 0
@@ -11497,6 +11816,7 @@ GameObject:
   - component: {fileID: 1944112783}
   - component: {fileID: 1944112782}
   - component: {fileID: 1944112781}
+  - component: {fileID: 1944112784}
   m_Layer: 0
   m_Name: Rock01 (2)
   m_TagString: Untagged
@@ -11513,8 +11833,8 @@ Transform:
   m_GameObject: {fileID: 1944112779}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.9, y: 0.95, z: -17.8}
-  m_LocalScale: {x: 2, y: 0.5, z: 1}
+  m_LocalPosition: {x: -1.9, y: 1.12, z: -19.31}
+  m_LocalScale: {x: 4, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 122544207}
@@ -11535,7 +11855,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -11594,6 +11914,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1944112779}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1944112784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944112779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9070b4f42455f447b98ab4a1b277085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thePlayer: {fileID: 753903226}
+  playerAnim: {fileID: 91822795}
 --- !u!1001 &1944926287
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12059,11 +12393,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.04
+      value: 0.27499998
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.15999997
+      value: -0.55999994
       objectReference: {fileID: 0}
     - target: {fileID: 4483830403358642, guid: 74442f407a24ac84f95f08a83b1bb617, type: 3}
       propertyPath: m_LocalPosition.z
