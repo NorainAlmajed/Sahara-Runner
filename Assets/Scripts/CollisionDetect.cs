@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -22,6 +23,7 @@ public class CollisionDetect : MonoBehaviour
         mainCam.GetComponent<Animator>().Play("CollisionCam");
         yield return new WaitForSeconds(3);
         fadeOut.SetActive(true);
-
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene(0);
     }
 }
