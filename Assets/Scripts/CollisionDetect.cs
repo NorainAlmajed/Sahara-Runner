@@ -12,6 +12,7 @@ public class CollisionDetect : MonoBehaviour
     [SerializeField] GameObject fadeOut;
     void OnTriggerEnter(Collider other)
     {
+        SaveLoad.saveData = true;
         StartCoroutine(CollisonEnd());
 
     }

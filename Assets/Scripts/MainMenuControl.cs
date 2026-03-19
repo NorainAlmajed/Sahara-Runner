@@ -15,9 +15,18 @@ public class MainMenuControl : MonoBehaviour
     public static bool hasClicked;
     [SerializeField] GameObject staticCam;
     [SerializeField] GameObject fadeIn;
+    [SerializeField] int loadedCoins;
+    [SerializeField] int loadedGems;
+    [SerializeField] int loadedDistance;
+    [SerializeField] GameObject coinDisplay;
+    [SerializeField] GameObject gemDisplay;
+    [SerializeField] GameObject distanceDisplay;
+
 
     void Start()
     {
+
+
         StartCoroutine(FadeInTurnOff());
 
         if(hasClicked == true)
@@ -65,6 +74,13 @@ public class MainMenuControl : MonoBehaviour
      
     IEnumerator FadeInTurnOff()
     {
+         yield return new WaitForSeconds(0.05f);
+        loadedCoins = PlayerPrefs.GetInt("COINSAVE");
+        loadedGems = PlayerPrefs.GetInt("GEMSAVE");
+        loadedDistance = PlayerPrefs.GetInt("DISTANCESAVE");
+        coinDisplay.GetComponent<TMPro.TMP_Text>().text = "" +loadedCoins;
+        gemDisplay.GetComponent<TMPro.TMP_Text>().text = "" +loadedGems;
+        distanceDisplay.GetComponent<TMPro.TMP_Text>().text = "" +loadedDistance;
         yield return new WaitForSeconds(1);
         fadeIn.SetActive(false);
     }
