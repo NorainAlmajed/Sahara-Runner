@@ -25,7 +25,7 @@ public class MainMenuControl : MonoBehaviour
 
     void Start()
     {
-
+        PlayerPrefs.DeleteAll();
         StartCoroutine(FadeInTurnOff());
 
         if(hasClicked == true)
