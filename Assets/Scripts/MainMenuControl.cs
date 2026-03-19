@@ -25,7 +25,6 @@ public class MainMenuControl : MonoBehaviour
 
     void Start()
     {
-
         StartCoroutine(FadeInTurnOff());
 
         if(hasClicked == true)
